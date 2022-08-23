@@ -7,9 +7,11 @@
 
 (function main() {
   'use strict'; // Demande un interprétation stricte du code
-
-  let a = 'Bonjour';
-
-  console.log(a);
+  let temperatureCelcius = Number (prompt('Température en celcius : '));
+  if (isNaN(temperatureCelcius)) {
+    alert('Ce n\'est pas un nombre ! ');
+  }
+  else {
+    alert(`${temperatureCelcius}°C = ${temperatureCelcius * 9 / 5 + 32}°F`);
+  }
 }()); // Main IIFE
-
